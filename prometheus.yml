@@ -1,0 +1,6 @@
+scrape_configs:  #configuration for scraping 
+  - job_name: cadvicsor #name of the job
+    scrape_interval: 5s  #scraping interval
+    static_configs:
+      - targets: # which system it has to monitor or target
+        - cadvisor:8080  # now it is monitoring cadvisior which is running at port 8080
